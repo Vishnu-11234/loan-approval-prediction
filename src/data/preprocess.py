@@ -4,7 +4,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 
-
+#Preprocessor Function
 def create_preprocessor(numerical_columns,categorical_columns):
     num_pipeline=Pipeline([
         ("imputer",SimpleImputer(strategy="mean"))
