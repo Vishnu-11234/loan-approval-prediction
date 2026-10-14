@@ -5,13 +5,14 @@ st.set_page_config(
     page_title="About",
     layout="wide"
 )
-
+#page title
 st.title("ℹ️ About The Project")
 st.write("A MAchine Learning application that predicts wether "
          "a loan application is likely to be approved based on"
          "applicant, financial,and loan related information")
 
 st.divider()
+
 st.subheader("📌 Project Overview")
 st.write("This project uses a Decision Tree Classifier to predict"
          "loan approval. THe Machine Learning pipeline includes data preprocessing," 
@@ -47,6 +48,8 @@ st.markdown(
     """
 )
 st.divider()
+
+#model information
 st.subheader("Model Information")
 col1,col2=st.columns(2)
 with col1:
@@ -60,6 +63,8 @@ with col2:
     st.subheader("Maximum Sample Per Leaf")
     st.write("4")
 st.divider()
+
+#technologies used
 st.subheader("Technologies Used")
 col1,col2,col3=st.columns(3)
 with col1:
@@ -81,7 +86,7 @@ with col3:
 
 
 
-
+#Project Architecture
 st.header("📁 Project Architecture")
 
 st.code(
@@ -130,10 +135,7 @@ Decision_Tree/
     """,
     language="text"
 )
-
-
 st.divider()
-
 
 
 st.header("⚠️ Disclaimer")
@@ -148,9 +150,8 @@ st.info(
 
 
 
-
 st.divider()
-
+#Caption
 st.caption(
     "Loan Approval Prediction System • Machine Learning Project"
 )

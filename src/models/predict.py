@@ -14,7 +14,6 @@ def predict_loan(application_data):
 if __name__ == "__main__":
 
     sample_application = {
-        "Applicant_ID": 1001,
         "Applicant_Income": 50000,
         "Coapplicant_Income": 10000,
         "Age": 30,

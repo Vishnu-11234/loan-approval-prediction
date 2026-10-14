@@ -27,13 +27,7 @@ st.divider()
 st.header(" 👤 Applicant Information")
 col1,col2,col3=st.columns(3)
 with col1:
-    applicant_id=st.number_input(
-        "Applicant Id",
-        min_value=1,
-        max_value=2000,
-        step=1
 
-    )
     age=st.number_input(
         "Age ",
         min_value=18,
@@ -164,7 +158,6 @@ predict_button=st.button(
 if predict_button:
     application_data = {
 
-        "Applicant_ID": applicant_id,
 
         "Applicant_Income": applicant_income,
 
